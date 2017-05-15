@@ -4,7 +4,7 @@
 namespace BFITech\ZapStore;
 
 
-class PRedis extends Redis {
+class PRedis extends RedisConn {
 
 	/**
 	 * Constructor.
