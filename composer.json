@@ -1,0 +1,42 @@
+{
+  "name": "bfitech/zapstore-predis",
+  "description": "Predis support for zapstore.",
+  "type": "metapackage",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Rendra Suroso",
+      "email": "rs@cogsci.bandungfe.net"
+    },
+    {
+      "name": "Septiyan Nariyanto",
+      "email": "septiyan.nariyanto@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.5 || ~7.0",
+    "predis/predis": "~1.1.1",
+    "bfitech/zapstore": "1.3.x-dev"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~4.8"
+  },
+  "suggest": {
+    "ext-phpiredis": "Use phpiredis backen for Predis."
+  },
+  "autoload": {
+    "psr-4": {
+      "BFITech\\ZapStore\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "": "vendor/bfitech/zapstore/"
+    }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.3.x-dev"
+    }
+  }
+}
