@@ -4,7 +4,7 @@
 use BFITech\ZapCore\Logger;
 use BFITech\ZapStore as zs;
 
-class PRedisTest extends \RedisTest {
+class PRedisTest extends RedisTest {
 
 	public static $engine = 'predis';
 
