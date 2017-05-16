@@ -4,7 +4,7 @@
 namespace BFITech\ZapStore;
 
 
-class PRedis extends RedisConn {
+class Predis extends RedisConn {
 
 	/**
 	 * Constructor.
@@ -15,7 +15,7 @@ class PRedis extends RedisConn {
 	 * @param Logger $logger Instance of BFITech\\ZapCore\\Logger.
 	 */
 	public function __construct($params, $logger=null) {
-		$params['redistype'] = 'redis';
+		$params['redistype'] = 'predis';
 		parent::__construct($params, $logger);
 	}
 

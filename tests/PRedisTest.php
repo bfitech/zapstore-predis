@@ -4,7 +4,7 @@
 use BFITech\ZapCore\Logger;
 use BFITech\ZapStore as zs;
 
-class PRedisTest extends RedisConnTest {
+class PredisTest extends RedisConnTest {
 
 	public static $engine = 'predis';
 
@@ -14,7 +14,7 @@ class PRedisTest extends RedisConnTest {
 		$config = json_decode(
 			file_get_contents(getcwd() . '/zapstore-redis-test.config.json'),
 			true);
-		$sql = new zs\Redis($config['predis'], $logger);
+		$sql = new zs\RedisConn($config['predis'], $logger);
 		$this->assertEquals(
 			$sql->get_connection_params()['redistype'], 'predis');
 	}
