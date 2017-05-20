@@ -22,7 +22,7 @@
     "phpunit/phpunit": "~4.8"
   },
   "suggest": {
-    "ext-phpiredis": "Use phpiredis backen for Predis."
+    "ext-phpiredis": "Use phpiredis backend for Predis."
   },
   "autoload": {
     "psr-4": {

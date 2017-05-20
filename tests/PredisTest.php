@@ -12,9 +12,10 @@ class PredisTest extends RedisConnTest {
 		$logger = new Logger(
 			Logger::ERROR, getcwd() . '/zapstore-redis-test.log');
 		$config = json_decode(
-			file_get_contents(getcwd() . '/zapstore-redis-test.config.json'),
+			file_get_contents(
+				getcwd() . '/zapstore-redis-test.config.json'),
 			true);
-		$sql = new zs\RedisConn($config['predis'], $logger);
+		$sql = new zs\Predis($config['predis'], $logger);
 		$this->assertEquals(
 			$sql->get_connection_params()['redistype'], 'predis');
 	}
