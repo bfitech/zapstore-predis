@@ -1,7 +1,7 @@
 {
   "name": "bfitech/zapstore-predis",
   "description": "Predis support for zapstore.",
-  "type": "metapackage",
+  "type": "library",
   "license": "MIT",
   "authors": [
     {
