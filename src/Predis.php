@@ -4,6 +4,12 @@
 namespace BFITech\ZapStore;
 
 
+use BFITech\ZapCore\Logger;
+
+
+/**
+ * Predis wrapper class.
+ */
 class Predis extends RedisConn {
 
 	/**
@@ -12,9 +18,9 @@ class Predis extends RedisConn {
 	 * @param array $params Redis connection dict exactly the same with
 	 *     that in the parent class except that 'redistype' key can be
 	 *     omitted.
-	 * @param Logger $logger Instance of BFITech\\ZapCore\\Logger.
+	 * @param Logger $logger Logger instance.
 	 */
-	public function __construct($params, $logger=null) {
+	public function __construct($params, Logger $logger=null) {
 		$params['redistype'] = 'predis';
 		parent::__construct($params, $logger);
 	}
