@@ -16,23 +16,13 @@
   "require": {
     "php": ">=5.5 || ~7.0",
     "predis/predis": "~1.1.1",
-    "bfitech/zapstore": "~1.3.2"
+    "bfitech/zapstore": "~1.3.3"
   },
   "require-dev": {
     "phpunit/phpunit": "~4.8"
   },
   "suggest": {
     "ext-phpiredis": "Use phpiredis backend for Predis."
-  },
-  "autoload": {
-    "psr-4": {
-      "BFITech\\ZapStore\\": "src"
-    }
-  },
-  "autoload-dev": {
-    "psr-4": {
-      "": "vendor/bfitech/zapstore"
-    }
   },
   "extra": {
     "branch-alias": {

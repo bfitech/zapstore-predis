@@ -35,7 +35,7 @@
 	</testsuites>
 	<filter>
 		<whitelist processUncoveredFilesFromWhitelist="true">
-			<directory suffix=".php">./src</directory>
+			<file>./vendor/bfitech/zapstore/src/Predis.php</file>
 		</whitelist>
 	</filter>
 	<logging>
