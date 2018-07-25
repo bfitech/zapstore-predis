@@ -1,9 +1,9 @@
 <?php
 
 
-use BFITech\ZapCoreDev\CoreDev;
+use BFITech\ZapCommonDev\CommonDev;
 
 
-CoreDev::testdir(__FILE__);
+CommonDev::testdir(__FILE__);
 require_once(__DIR__ . '/../vendor/bfitech/zapstore/tests/PredisTest.php');
 
